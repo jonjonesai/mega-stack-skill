@@ -36,12 +36,12 @@ $content = <<<BLOCKS
 <!--  SECTION 1: HERO                                       -->
 <!-- ═══════════════════════════════════════════════════════ -->
 
-<!-- wp:cover {"dimRatio":70,"overlayColor":"contrast","minHeight":100,"minHeightUnit":"vh","isDark":true,"align":"full","className":"mega-hero","style":{"color":{"duotone":"unset"}}} -->
-<div class="wp-block-cover alignfull is-dark mega-hero" style="min-height:100vh">
+<!-- wp:cover {"dimRatio":70,"overlayColor":"contrast","minHeight":100,"minHeightUnit":"vh","isDark":true,"align":"full","className":"mega-hero","contentPosition":"top center","style":{"color":{"duotone":"unset"}}} -->
+<div class="wp-block-cover alignfull is-dark mega-hero has-custom-content-position is-position-top-center" style="min-height:100vh">
 <span aria-hidden="true" class="wp-block-cover__background has-contrast-background-color has-background-dim-70 has-background-dim" style="background-color:var(--global-palette3,#1a1a2e)"></span>
 <div class="wp-block-cover__inner-container">
 
-<!-- wp:spacer {"height":"80px"} --><div style="height:80px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->
+<!-- wp:spacer {"height":"50px"} --><div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->
 
 <!-- wp:paragraph {"align":"center","style":{"typography":{"letterSpacing":"4px","textTransform":"uppercase","fontSize":"0.8rem","fontWeight":"600"},"color":{"text":"var(--global-palette1)"}}} -->
 <p class="has-text-align-center" style="color:var(--global-palette1);font-size:0.8rem;font-weight:600;letter-spacing:4px;text-transform:uppercase">Print-On-Demand, Reimagined</p>
@@ -66,7 +66,7 @@ $content = <<<BLOCKS
 </div>
 <!-- /wp:buttons -->
 
-<!-- wp:spacer {"height":"80px"} --><div style="height:80px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->
+<!-- wp:spacer {"height":"50px"} --><div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->
 
 </div>
 </div>
@@ -85,28 +85,28 @@ $content = <<<BLOCKS
 
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"1.5rem","bottom":"1.5rem"}}}} -->
 <div class="wp-block-column" style="padding-top:1.5rem;padding-bottom:1.5rem">
-<!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"3.5rem","fontWeight":"900","lineHeight":"1"},"color":{"text":"var(--global-palette1)"}}} --><h2 class="wp-block-heading has-text-align-center" style="color:var(--global-palette1);font-size:3.5rem;font-weight:900;line-height:1">45+</h2><!-- /wp:heading -->
+<!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"3.5rem","fontWeight":"900","lineHeight":"1"},"color":{"text":"var(--global-palette2)"}}} --><h2 class="wp-block-heading has-text-align-center" style="color:var(--global-palette2);font-size:3.5rem;font-weight:900;line-height:1">45+</h2><!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center","style":{"typography":{"fontWeight":"700","letterSpacing":"1px","textTransform":"uppercase","fontSize":"0.85rem"},"color":{"text":"var(--global-palette4)"}}} --><p class="has-text-align-center" style="color:var(--global-palette4);font-weight:700;letter-spacing:1px;text-transform:uppercase;font-size:0.85rem">Product Types</p><!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"1.5rem","bottom":"1.5rem"}}}} -->
 <div class="wp-block-column" style="padding-top:1.5rem;padding-bottom:1.5rem">
-<!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"3.5rem","fontWeight":"900","lineHeight":"1"},"color":{"text":"var(--global-palette1)"}}} --><h2 class="wp-block-heading has-text-align-center" style="color:var(--global-palette1);font-size:3.5rem;font-weight:900;line-height:1">7 Min</h2><!-- /wp:heading -->
+<!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"3.5rem","fontWeight":"900","lineHeight":"1"},"color":{"text":"var(--global-palette2)"}}} --><h2 class="wp-block-heading has-text-align-center" style="color:var(--global-palette2);font-size:3.5rem;font-weight:900;line-height:1">7 Min</h2><!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center","style":{"typography":{"fontWeight":"700","letterSpacing":"1px","textTransform":"uppercase","fontSize":"0.85rem"},"color":{"text":"var(--global-palette4)"}}} --><p class="has-text-align-center" style="color:var(--global-palette4);font-weight:700;letter-spacing:1px;text-transform:uppercase;font-size:0.85rem">Idea to Live</p><!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"1.5rem","bottom":"1.5rem"}}}} -->
 <div class="wp-block-column" style="padding-top:1.5rem;padding-bottom:1.5rem">
-<!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"3.5rem","fontWeight":"900","lineHeight":"1"},"color":{"text":"var(--global-palette1)"}}} --><h2 class="wp-block-heading has-text-align-center" style="color:var(--global-palette1);font-size:3.5rem;font-weight:900;line-height:1">100%</h2><!-- /wp:heading -->
+<!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"3.5rem","fontWeight":"900","lineHeight":"1"},"color":{"text":"var(--global-palette2)"}}} --><h2 class="wp-block-heading has-text-align-center" style="color:var(--global-palette2);font-size:3.5rem;font-weight:900;line-height:1">100%</h2><!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center","style":{"typography":{"fontWeight":"700","letterSpacing":"1px","textTransform":"uppercase","fontSize":"0.85rem"},"color":{"text":"var(--global-palette4)"}}} --><p class="has-text-align-center" style="color:var(--global-palette4);font-weight:700;letter-spacing:1px;text-transform:uppercase;font-size:0.85rem">SEO Ready</p><!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"1.5rem","bottom":"1.5rem"}}}} -->
 <div class="wp-block-column" style="padding-top:1.5rem;padding-bottom:1.5rem">
-<!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"3.5rem","fontWeight":"900","lineHeight":"1"},"color":{"text":"var(--global-palette1)"}}} --><h2 class="wp-block-heading has-text-align-center" style="color:var(--global-palette1);font-size:3.5rem;font-weight:900;line-height:1">Zero</h2><!-- /wp:heading -->
+<!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"3.5rem","fontWeight":"900","lineHeight":"1"},"color":{"text":"var(--global-palette2)"}}} --><h2 class="wp-block-heading has-text-align-center" style="color:var(--global-palette2);font-size:3.5rem;font-weight:900;line-height:1">Zero</h2><!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center","style":{"typography":{"fontWeight":"700","letterSpacing":"1px","textTransform":"uppercase","fontSize":"0.85rem"},"color":{"text":"var(--global-palette4)"}}} --><p class="has-text-align-center" style="color:var(--global-palette4);font-weight:700;letter-spacing:1px;text-transform:uppercase;font-size:0.85rem">Grind</p><!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
@@ -128,8 +128,8 @@ $content = <<<BLOCKS
 <h2 class="wp-block-heading has-text-align-center" style="color:var(--global-palette3);font-size:2.5rem;font-weight:800;letter-spacing:-0.5px;margin-bottom:0.75rem">Something for Every Niche</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"center","style":{"color":{"text":"var(--global-palette5)"},"typography":{"fontSize":"1.1rem"},"spacing":{"margin":{"bottom":"3rem"}}}} -->
-<p class="has-text-align-center" style="color:var(--global-palette5);font-size:1.1rem;margin-bottom:3rem">T-shirts, hoodies, mugs, wall art, hats, drinkware, mouse pads and more.</p>
+<!-- wp:paragraph {"align":"center","style":{"color":{"text":"var(--global-palette2)"},"typography":{"fontSize":"1.1rem","fontWeight":"600"},"spacing":{"margin":{"bottom":"3rem"}}}} -->
+<p class="has-text-align-center" style="color:var(--global-palette2);font-size:1.1rem;font-weight:600;margin-bottom:3rem">T-shirts &bull; Hoodies &bull; Mugs &bull; Wall Art &bull; Hats &bull; Drinkware &bull; Mouse Pads &amp; more</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":"1.5rem"}}} -->
@@ -139,8 +139,8 @@ $content = <<<BLOCKS
 <div class="wp-block-column">
 <!-- wp:cover {"url":"https://picsum.photos/seed/mega1/600/700","dimRatio":30,"minHeight":380,"isDark":true,"style":{"border":{"radius":"8px"}}} -->
 <div class="wp-block-cover" style="border-radius:8px;min-height:380px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-30 has-background-dim"></span><img class="wp-block-cover__image-background" src="https://picsum.photos/seed/mega1/600/700" alt="Apparel" style="object-position:50% 50%" data-object-fit="cover"/><div class="wp-block-cover__inner-container">
-<!-- wp:heading {"textAlign":"center","level":3,"style":{"color":{"text":"#ffffff"},"typography":{"fontWeight":"800","fontSize":"1.5rem","letterSpacing":"1px","textTransform":"uppercase"}}} --><h3 class="wp-block-heading has-text-align-center" style="color:#ffffff;font-weight:800;font-size:1.5rem;letter-spacing:1px;text-transform:uppercase">Apparel</h3><!-- /wp:heading -->
-<!-- wp:paragraph {"align":"center","style":{"color":{"text":"rgba(255,255,255,0.85)"},"typography":{"fontSize":"0.9rem"}}} --><p class="has-text-align-center" style="color:rgba(255,255,255,0.85);font-size:0.9rem">Tees · Hoodies · Hats</p><!-- /wp:paragraph -->
+<!-- wp:heading {"textAlign":"center","level":3,"style":{"color":{"text":"#ffffff"},"typography":{"fontWeight":"800","fontSize":"2rem","letterSpacing":"1px","textTransform":"uppercase"}}} --><h3 class="wp-block-heading has-text-align-center" style="color:#ffffff;font-weight:800;font-size:2rem;letter-spacing:1px;text-transform:uppercase">Apparel</h3><!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center","style":{"color":{"text":"rgba(255,255,255,0.9)"},"typography":{"fontSize":"1.1rem","fontWeight":"500"}}} --><p class="has-text-align-center" style="color:rgba(255,255,255,0.9);font-size:1.1rem;font-weight:500">Tees &bull; Hoodies &bull; Hats</p><!-- /wp:paragraph -->
 </div></div>
 <!-- /wp:cover -->
 </div>
@@ -150,8 +150,8 @@ $content = <<<BLOCKS
 <div class="wp-block-column">
 <!-- wp:cover {"url":"https://picsum.photos/seed/mega2/600/700","dimRatio":30,"minHeight":380,"isDark":true,"style":{"border":{"radius":"8px"}}} -->
 <div class="wp-block-cover" style="border-radius:8px;min-height:380px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-30 has-background-dim"></span><img class="wp-block-cover__image-background" src="https://picsum.photos/seed/mega2/600/700" alt="Drinkware" style="object-position:50% 50%" data-object-fit="cover"/><div class="wp-block-cover__inner-container">
-<!-- wp:heading {"textAlign":"center","level":3,"style":{"color":{"text":"#ffffff"},"typography":{"fontWeight":"800","fontSize":"1.5rem","letterSpacing":"1px","textTransform":"uppercase"}}} --><h3 class="wp-block-heading has-text-align-center" style="color:#ffffff;font-weight:800;font-size:1.5rem;letter-spacing:1px;text-transform:uppercase">Drinkware</h3><!-- /wp:heading -->
-<!-- wp:paragraph {"align":"center","style":{"color":{"text":"rgba(255,255,255,0.85)"},"typography":{"fontSize":"0.9rem"}}} --><p class="has-text-align-center" style="color:rgba(255,255,255,0.85);font-size:0.9rem">Mugs · Tumblers · Water Bottles</p><!-- /wp:paragraph -->
+<!-- wp:heading {"textAlign":"center","level":3,"style":{"color":{"text":"#ffffff"},"typography":{"fontWeight":"800","fontSize":"2rem","letterSpacing":"1px","textTransform":"uppercase"}}} --><h3 class="wp-block-heading has-text-align-center" style="color:#ffffff;font-weight:800;font-size:2rem;letter-spacing:1px;text-transform:uppercase">Drinkware</h3><!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center","style":{"color":{"text":"rgba(255,255,255,0.9)"},"typography":{"fontSize":"1.1rem","fontWeight":"500"}}} --><p class="has-text-align-center" style="color:rgba(255,255,255,0.9);font-size:1.1rem;font-weight:500">Mugs &bull; Tumblers &bull; Water Bottles</p><!-- /wp:paragraph -->
 </div></div>
 <!-- /wp:cover -->
 </div>
@@ -161,8 +161,8 @@ $content = <<<BLOCKS
 <div class="wp-block-column">
 <!-- wp:cover {"url":"https://picsum.photos/seed/mega3/600/700","dimRatio":30,"minHeight":380,"isDark":true,"style":{"border":{"radius":"8px"}}} -->
 <div class="wp-block-cover" style="border-radius:8px;min-height:380px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-30 has-background-dim"></span><img class="wp-block-cover__image-background" src="https://picsum.photos/seed/mega3/600/700" alt="Wall Art" style="object-position:50% 50%" data-object-fit="cover"/><div class="wp-block-cover__inner-container">
-<!-- wp:heading {"textAlign":"center","level":3,"style":{"color":{"text":"#ffffff"},"typography":{"fontWeight":"800","fontSize":"1.5rem","letterSpacing":"1px","textTransform":"uppercase"}}} --><h3 class="wp-block-heading has-text-align-center" style="color:#ffffff;font-weight:800;font-size:1.5rem;letter-spacing:1px;text-transform:uppercase">Wall Art</h3><!-- /wp:heading -->
-<!-- wp:paragraph {"align":"center","style":{"color":{"text":"rgba(255,255,255,0.85)"},"typography":{"fontSize":"0.9rem"}}} --><p class="has-text-align-center" style="color:rgba(255,255,255,0.85);font-size:0.9rem">Posters · Canvas · Framed Prints</p><!-- /wp:paragraph -->
+<!-- wp:heading {"textAlign":"center","level":3,"style":{"color":{"text":"#ffffff"},"typography":{"fontWeight":"800","fontSize":"2rem","letterSpacing":"1px","textTransform":"uppercase"}}} --><h3 class="wp-block-heading has-text-align-center" style="color:#ffffff;font-weight:800;font-size:2rem;letter-spacing:1px;text-transform:uppercase">Wall Art</h3><!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center","style":{"color":{"text":"rgba(255,255,255,0.9)"},"typography":{"fontSize":"1.1rem","fontWeight":"500"}}} --><p class="has-text-align-center" style="color:rgba(255,255,255,0.9);font-size:1.1rem;font-weight:500">Posters &bull; Canvas &bull; Framed Prints</p><!-- /wp:paragraph -->
 </div></div>
 <!-- /wp:cover -->
 </div>
@@ -195,33 +195,33 @@ $content = <<<BLOCKS
 
 <!-- wp:column {"style":{"spacing":{"padding":{"all":"1.5rem"}}}} -->
 <div class="wp-block-column" style="padding:1.5rem">
-<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"2.5rem"}}} --><p class="has-text-align-center" style="font-size:2.5rem">🚚</p><!-- /wp:paragraph -->
-<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontWeight":"700","fontSize":"1rem","letterSpacing":"0.5px"},"color":{"text":"var(--global-palette3)"},"spacing":{"margin":{"top":"0.75rem","bottom":"0.5rem"}}}} --><h3 class="wp-block-heading has-text-align-center" style="color:var(--global-palette3);font-weight:700;font-size:1rem;letter-spacing:0.5px;margin-top:0.75rem;margin-bottom:0.5rem">FREE SHIPPING</h3><!-- /wp:heading -->
-<!-- wp:paragraph {"align":"center","style":{"color":{"text":"var(--global-palette5)"},"typography":{"fontSize":"0.9rem"}}} --><p class="has-text-align-center" style="color:var(--global-palette5);font-size:0.9rem">On all orders over $50</p><!-- /wp:paragraph -->
+<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"4rem"}}} --><p class="has-text-align-center" style="font-size:4rem">🚚</p><!-- /wp:paragraph -->
+<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontWeight":"800","fontSize":"1.25rem","letterSpacing":"1px","textTransform":"uppercase"},"color":{"text":"var(--global-palette3)"},"spacing":{"margin":{"top":"1rem","bottom":"0.6rem"}}}} --><h3 class="wp-block-heading has-text-align-center" style="color:var(--global-palette3);font-weight:800;font-size:1.25rem;letter-spacing:1px;text-transform:uppercase;margin-top:1rem;margin-bottom:0.6rem">FREE SHIPPING</h3><!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center","style":{"color":{"text":"var(--global-palette5)"},"typography":{"fontSize":"1.1rem"}}} --><p class="has-text-align-center" style="color:var(--global-palette5);font-size:1.1rem">On all orders over $50</p><!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"padding":{"all":"1.5rem"}}}} -->
 <div class="wp-block-column" style="padding:1.5rem">
-<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"2.5rem"}}} --><p class="has-text-align-center" style="font-size:2.5rem">⭐</p><!-- /wp:paragraph -->
-<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontWeight":"700","fontSize":"1rem","letterSpacing":"0.5px"},"color":{"text":"var(--global-palette3)"},"spacing":{"margin":{"top":"0.75rem","bottom":"0.5rem"}}}} --><h3 class="wp-block-heading has-text-align-center" style="color:var(--global-palette3);font-weight:700;font-size:1rem;letter-spacing:0.5px;margin-top:0.75rem;margin-bottom:0.5rem">SATISFACTION GUARANTEED</h3><!-- /wp:heading -->
-<!-- wp:paragraph {"align":"center","style":{"color":{"text":"var(--global-palette5)"},"typography":{"fontSize":"0.9rem"}}} --><p class="has-text-align-center" style="color:var(--global-palette5);font-size:0.9rem">Love it or your money back</p><!-- /wp:paragraph -->
+<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"4rem"}}} --><p class="has-text-align-center" style="font-size:4rem">⭐</p><!-- /wp:paragraph -->
+<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontWeight":"800","fontSize":"1.25rem","letterSpacing":"1px","textTransform":"uppercase"},"color":{"text":"var(--global-palette3)"},"spacing":{"margin":{"top":"1rem","bottom":"0.6rem"}}}} --><h3 class="wp-block-heading has-text-align-center" style="color:var(--global-palette3);font-weight:800;font-size:1.25rem;letter-spacing:1px;text-transform:uppercase;margin-top:1rem;margin-bottom:0.6rem">SATISFACTION GUARANTEED</h3><!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center","style":{"color":{"text":"var(--global-palette5)"},"typography":{"fontSize":"1.1rem"}}} --><p class="has-text-align-center" style="color:var(--global-palette5);font-size:1.1rem">Love it or your money back</p><!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"padding":{"all":"1.5rem"}}}} -->
 <div class="wp-block-column" style="padding:1.5rem">
-<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"2.5rem"}}} --><p class="has-text-align-center" style="font-size:2.5rem">🎨</p><!-- /wp:paragraph -->
-<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontWeight":"700","fontSize":"1rem","letterSpacing":"0.5px"},"color":{"text":"var(--global-palette3)"},"spacing":{"margin":{"top":"0.75rem","bottom":"0.5rem"}}}} --><h3 class="wp-block-heading has-text-align-center" style="color:var(--global-palette3);font-weight:700;font-size:1rem;letter-spacing:0.5px;margin-top:0.75rem;margin-bottom:0.5rem">UNIQUE DESIGNS</h3><!-- /wp:heading -->
-<!-- wp:paragraph {"align":"center","style":{"color":{"text":"var(--global-palette5)"},"typography":{"fontSize":"0.9rem"}}} --><p class="has-text-align-center" style="color:var(--global-palette5);font-size:0.9rem">You won't find these anywhere else</p><!-- /wp:paragraph -->
+<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"4rem"}}} --><p class="has-text-align-center" style="font-size:4rem">🎨</p><!-- /wp:paragraph -->
+<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontWeight":"800","fontSize":"1.25rem","letterSpacing":"1px","textTransform":"uppercase"},"color":{"text":"var(--global-palette3)"},"spacing":{"margin":{"top":"1rem","bottom":"0.6rem"}}}} --><h3 class="wp-block-heading has-text-align-center" style="color:var(--global-palette3);font-weight:800;font-size:1.25rem;letter-spacing:1px;text-transform:uppercase;margin-top:1rem;margin-bottom:0.6rem">UNIQUE DESIGNS</h3><!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center","style":{"color":{"text":"var(--global-palette5)"},"typography":{"fontSize":"1.1rem"}}} --><p class="has-text-align-center" style="color:var(--global-palette5);font-size:1.1rem">You won't find these anywhere else</p><!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"padding":{"all":"1.5rem"}}}} -->
 <div class="wp-block-column" style="padding:1.5rem">
-<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"2.5rem"}}} --><p class="has-text-align-center" style="font-size:2.5rem">⚡</p><!-- /wp:paragraph -->
-<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontWeight":"700","fontSize":"1rem","letterSpacing":"0.5px"},"color":{"text":"var(--global-palette3)"},"spacing":{"margin":{"top":"0.75rem","bottom":"0.5rem"}}}} --><h3 class="wp-block-heading has-text-align-center" style="color:var(--global-palette3);font-weight:700;font-size:1rem;letter-spacing:0.5px;margin-top:0.75rem;margin-bottom:0.5rem">FAST PRODUCTION</h3><!-- /wp:heading -->
-<!-- wp:paragraph {"align":"center","style":{"color":{"text":"var(--global-palette5)"},"typography":{"fontSize":"0.9rem"}}} --><p class="has-text-align-center" style="color:var(--global-palette5);font-size:0.9rem">Ships within 3–5 business days</p><!-- /wp:paragraph -->
+<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"4rem"}}} --><p class="has-text-align-center" style="font-size:4rem">⚡</p><!-- /wp:paragraph -->
+<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontWeight":"800","fontSize":"1.25rem","letterSpacing":"1px","textTransform":"uppercase"},"color":{"text":"var(--global-palette3)"},"spacing":{"margin":{"top":"1rem","bottom":"0.6rem"}}}} --><h3 class="wp-block-heading has-text-align-center" style="color:var(--global-palette3);font-weight:800;font-size:1.25rem;letter-spacing:1px;text-transform:uppercase;margin-top:1rem;margin-bottom:0.6rem">FAST PRODUCTION</h3><!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center","style":{"color":{"text":"var(--global-palette5)"},"typography":{"fontSize":"1.1rem"}}} --><p class="has-text-align-center" style="color:var(--global-palette5);font-size:1.1rem">Ships within 3–5 business days</p><!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
 
@@ -311,6 +311,12 @@ $kadence_opts['product_archive_columns']           = 3;
 $kadence_opts['product_archive_default_view']      = 'grid';
 $kadence_opts['product_archive_image_hover_switch'] = 'fade';
 $kadence_opts['product_content_style']             = 'unboxed';
+
+// Mobile hamburger trigger → secondary color so it pops on white header
+$kadence_opts['mobile_trigger_color']      = [ 'color' => 'palette9', 'background' => 'palette2' ];
+$kadence_opts['mobile_trigger_background'] = [ 'color' => 'palette2', 'hover' => 'palette1' ];
+$kadence_opts['mobile_trigger_border']     = [];
+$kadence_opts['mobile_trigger_padding']    = [ 'size' => [ 'desktop' => [ 0.5, 0.7, 0.5, 0.7 ] ], 'unit' => [ 'desktop' => 'em' ], 'locked' => [ 'desktop' => false ] ];
 
 // Scroll to top
 $kadence_opts['scroll_up'] = true;
