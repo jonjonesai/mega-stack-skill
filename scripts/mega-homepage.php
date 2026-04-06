@@ -121,11 +121,11 @@ $content = <<<BLOCKS
 <!--  SECTION 3: NICHE IMAGERY ROW                          -->
 <!-- ═══════════════════════════════════════════════════════ -->
 
-<!-- wp:group {"align":"full","id":"niche-row","style":{"spacing":{"padding":{"top":"5rem","bottom":"5rem"}},"color":{"background":"var(--global-palette9)"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" id="niche-row" style="padding-top:5rem;padding-bottom:5rem;background-color:var(--global-palette9)">
+<!-- wp:group {"align":"full","id":"niche-row","style":{"spacing":{"padding":{"top":"5rem","bottom":"5rem"}}{},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" id="niche-row" style="padding-top:5rem;padding-bottom:5rem;"><
 
 <!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"2.5rem","fontWeight":"800","letterSpacing":"-0.5px"},"color":{"text":"var(--global-palette3)"},"spacing":{"margin":{"bottom":"0.75rem"}}}} -->
-<h2 class="wp-block-heading has-text-align-center" style="color:var(--global-palette3);font-size:2.5rem;font-weight:800;letter-spacing:-0.5px;margin-bottom:0.75rem">Something for Every Niche</h2>
+<h2 class="wp-block-heading has-text-align-center" style="color:var(--global-palette9);font-size:2.5rem;font-weight:800;letter-spacing:-0.5px;margin-bottom:0.75rem">Something for Every Niche</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","style":{"color":{"text":"var(--global-palette2)"},"typography":{"fontSize":"1.1rem","fontWeight":"600"},"spacing":{"margin":{"bottom":"3rem"}}}} -->
