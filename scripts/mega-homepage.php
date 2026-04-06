@@ -36,8 +36,8 @@ $content = <<<BLOCKS
 <!--  SECTION 1: HERO                                       -->
 <!-- ═══════════════════════════════════════════════════════ -->
 
-<!-- wp:cover {"dimRatio":70,"overlayColor":"contrast","minHeight":100,"minHeightUnit":"vh","isDark":true,"align":"full","className":"mega-hero","contentPosition":"top center","style":{"color":{"duotone":"unset"}}} -->
-<div class="wp-block-cover alignfull is-dark mega-hero has-custom-content-position is-position-top-center" style="min-height:100vh">
+<!-- wp:cover {"dimRatio":70,"overlayColor":"contrast","minHeight":100,"minHeightUnit":"vh","isDark":true,"align":"full","className":"mega-hero","style":{"color":{"duotone":"unset"}}} -->
+<div class="wp-block-cover alignfull is-dark mega-hero" style="min-height:100vh">
 <span aria-hidden="true" class="wp-block-cover__background has-contrast-background-color has-background-dim-70 has-background-dim" style="background-color:var(--global-palette3,#1a1a2e)"></span>
 <div class="wp-block-cover__inner-container">
 
@@ -121,8 +121,8 @@ $content = <<<BLOCKS
 <!--  SECTION 3: NICHE IMAGERY ROW                          -->
 <!-- ═══════════════════════════════════════════════════════ -->
 
-<!-- wp:group {"align":"full","id":"niche-row","style":{"spacing":{"padding":{"top":"5rem","bottom":"5rem"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" id="niche-row" style="padding-top:5rem;padding-bottom:5rem">
+<!-- wp:group {"align":"full","id":"niche-row","style":{"spacing":{"padding":{"top":"5rem","bottom":"5rem"}},"color":{"background":"var(--global-palette9)"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" id="niche-row" style="padding-top:5rem;padding-bottom:5rem;background-color:var(--global-palette9)">
 
 <!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"2.5rem","fontWeight":"800","letterSpacing":"-0.5px"},"color":{"text":"var(--global-palette3)"},"spacing":{"margin":{"bottom":"0.75rem"}}}} -->
 <h2 class="wp-block-heading has-text-align-center" style="color:var(--global-palette3);font-size:2.5rem;font-weight:800;letter-spacing:-0.5px;margin-bottom:0.75rem">Something for Every Niche</h2>
@@ -196,7 +196,7 @@ $content = <<<BLOCKS
 <!-- wp:column {"style":{"spacing":{"padding":{"all":"1.5rem"}}}} -->
 <div class="wp-block-column" style="padding:1.5rem">
 <!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"4rem"}}} --><p class="has-text-align-center" style="font-size:4rem">🚚</p><!-- /wp:paragraph -->
-<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontWeight":"800","fontSize":"1.25rem","letterSpacing":"1px","textTransform":"uppercase"},"color":{"text":"var(--global-palette3)"},"spacing":{"margin":{"top":"1rem","bottom":"0.6rem"}}}} --><h3 class="wp-block-heading has-text-align-center" style="color:var(--global-palette3);font-weight:800;font-size:1.25rem;letter-spacing:1px;text-transform:uppercase;margin-top:1rem;margin-bottom:0.6rem">FREE SHIPPING</h3><!-- /wp:heading -->
+<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontWeight":"800","fontSize":"1.5rem","letterSpacing":"1px","textTransform":"uppercase"},"color":{"text":"var(--global-palette3)"},"spacing":{"margin":{"top":"1rem","bottom":"0.6rem"}}}} --><h3 class="wp-block-heading has-text-align-center" style="color:var(--global-palette3);font-weight:800;font-size:1.5rem;letter-spacing:1px;text-transform:uppercase;margin-top:1rem;margin-bottom:0.6rem">FREE SHIPPING</h3><!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center","style":{"color":{"text":"var(--global-palette5)"},"typography":{"fontSize":"1.1rem"}}} --><p class="has-text-align-center" style="color:var(--global-palette5);font-size:1.1rem">On all orders over $50</p><!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
@@ -204,7 +204,7 @@ $content = <<<BLOCKS
 <!-- wp:column {"style":{"spacing":{"padding":{"all":"1.5rem"}}}} -->
 <div class="wp-block-column" style="padding:1.5rem">
 <!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"4rem"}}} --><p class="has-text-align-center" style="font-size:4rem">⭐</p><!-- /wp:paragraph -->
-<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontWeight":"800","fontSize":"1.25rem","letterSpacing":"1px","textTransform":"uppercase"},"color":{"text":"var(--global-palette3)"},"spacing":{"margin":{"top":"1rem","bottom":"0.6rem"}}}} --><h3 class="wp-block-heading has-text-align-center" style="color:var(--global-palette3);font-weight:800;font-size:1.25rem;letter-spacing:1px;text-transform:uppercase;margin-top:1rem;margin-bottom:0.6rem">SATISFACTION GUARANTEED</h3><!-- /wp:heading -->
+<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontWeight":"800","fontSize":"1.5rem","letterSpacing":"1px","textTransform":"uppercase"},"color":{"text":"var(--global-palette3)"},"spacing":{"margin":{"top":"1rem","bottom":"0.6rem"}}}} --><h3 class="wp-block-heading has-text-align-center" style="color:var(--global-palette3);font-weight:800;font-size:1.5rem;letter-spacing:1px;text-transform:uppercase;margin-top:1rem;margin-bottom:0.6rem">SATISFACTION GUARANTEED</h3><!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center","style":{"color":{"text":"var(--global-palette5)"},"typography":{"fontSize":"1.1rem"}}} --><p class="has-text-align-center" style="color:var(--global-palette5);font-size:1.1rem">Love it or your money back</p><!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
@@ -212,7 +212,7 @@ $content = <<<BLOCKS
 <!-- wp:column {"style":{"spacing":{"padding":{"all":"1.5rem"}}}} -->
 <div class="wp-block-column" style="padding:1.5rem">
 <!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"4rem"}}} --><p class="has-text-align-center" style="font-size:4rem">🎨</p><!-- /wp:paragraph -->
-<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontWeight":"800","fontSize":"1.25rem","letterSpacing":"1px","textTransform":"uppercase"},"color":{"text":"var(--global-palette3)"},"spacing":{"margin":{"top":"1rem","bottom":"0.6rem"}}}} --><h3 class="wp-block-heading has-text-align-center" style="color:var(--global-palette3);font-weight:800;font-size:1.25rem;letter-spacing:1px;text-transform:uppercase;margin-top:1rem;margin-bottom:0.6rem">UNIQUE DESIGNS</h3><!-- /wp:heading -->
+<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontWeight":"800","fontSize":"1.5rem","letterSpacing":"1px","textTransform":"uppercase"},"color":{"text":"var(--global-palette3)"},"spacing":{"margin":{"top":"1rem","bottom":"0.6rem"}}}} --><h3 class="wp-block-heading has-text-align-center" style="color:var(--global-palette3);font-weight:800;font-size:1.5rem;letter-spacing:1px;text-transform:uppercase;margin-top:1rem;margin-bottom:0.6rem">UNIQUE DESIGNS</h3><!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center","style":{"color":{"text":"var(--global-palette5)"},"typography":{"fontSize":"1.1rem"}}} --><p class="has-text-align-center" style="color:var(--global-palette5);font-size:1.1rem">You won't find these anywhere else</p><!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
@@ -220,7 +220,7 @@ $content = <<<BLOCKS
 <!-- wp:column {"style":{"spacing":{"padding":{"all":"1.5rem"}}}} -->
 <div class="wp-block-column" style="padding:1.5rem">
 <!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"4rem"}}} --><p class="has-text-align-center" style="font-size:4rem">⚡</p><!-- /wp:paragraph -->
-<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontWeight":"800","fontSize":"1.25rem","letterSpacing":"1px","textTransform":"uppercase"},"color":{"text":"var(--global-palette3)"},"spacing":{"margin":{"top":"1rem","bottom":"0.6rem"}}}} --><h3 class="wp-block-heading has-text-align-center" style="color:var(--global-palette3);font-weight:800;font-size:1.25rem;letter-spacing:1px;text-transform:uppercase;margin-top:1rem;margin-bottom:0.6rem">FAST PRODUCTION</h3><!-- /wp:heading -->
+<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontWeight":"800","fontSize":"1.5rem","letterSpacing":"1px","textTransform":"uppercase"},"color":{"text":"var(--global-palette3)"},"spacing":{"margin":{"top":"1rem","bottom":"0.6rem"}}}} --><h3 class="wp-block-heading has-text-align-center" style="color:var(--global-palette3);font-weight:800;font-size:1.5rem;letter-spacing:1px;text-transform:uppercase;margin-top:1rem;margin-bottom:0.6rem">FAST PRODUCTION</h3><!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center","style":{"color":{"text":"var(--global-palette5)"},"typography":{"fontSize":"1.1rem"}}} --><p class="has-text-align-center" style="color:var(--global-palette5);font-size:1.1rem">Ships within 3–5 business days</p><!-- /wp:paragraph -->
 </div>
 <!-- /wp:column -->
@@ -278,7 +278,7 @@ $kadence_opts['header_mobile_items'] = [
 // Header: clean white background with subtle bottom border
 $kadence_opts['header_main_background'] = [ 'desktop' => [ 'color' => 'palette9' ] ];
 $kadence_opts['header_main_bottom_border'] = [ [ 'width' => 1, 'unit' => 'px', 'color' => 'palette6', 'style' => 'solid' ] ];
-$kadence_opts['header_main_height'] = [ 'size' => [ 'desktop' => 80, 'tablet' => 70, 'mobile' => 60 ], 'unit' => [ 'desktop' => 'px', 'tablet' => 'px', 'mobile' => 'px' ] ];
+$kadence_opts['header_main_height'] = [ 'size' => [ 'desktop' => 68, 'tablet' => 60, 'mobile' => 51 ], 'unit' => [ 'desktop' => 'px', 'tablet' => 'px', 'mobile' => 'px' ] ];
 
 // Sticky header
 $kadence_opts['header_sticky'] = true;
@@ -390,6 +390,34 @@ if ( is_wp_error( $page_id ) ) {
 // ── SET AS FRONT PAGE ─────────────────────────────────────────────────────────
 update_option( 'show_on_front', 'page' );
 update_option( 'page_on_front', $page_id );
+
+// ── MEGA STANDARD PALETTE ────────────────────────────────────────────────────
+// Applied every time so palette is always correct.
+// palette1 = PRIMARY CTA     → Orange #FF5500
+// palette2 = CTA HOVER       → Deep orange #E04A00
+// palette3 = HEADINGS        → Near black #0A0A0A
+// palette4 = BODY TEXT       → Dark gray #2D2D2D
+// palette5 = MUTED TEXT      → Mid gray #6B6B6B
+// palette6 = BORDERS         → Light gray #E0E0E0
+// palette7 = LIGHT SURFACE   → Off-white #F5F5F5 (stats/trust bg)
+// palette8 = PAGE BG         → Near white #FAFAFA
+// palette9 = PURE WHITE      → #FFFFFF (text on dark/orange)
+// Students override palette1+2 to brand their store. Everything updates.
+// NOTE: Kadence reads palette from wp_options key 'kadence_global_palette' (NOT theme_mods)
+// Format: {"active":"palette","palette":[{color,slug,name},...]}
+update_option( 'kadence_global_palette', wp_json_encode( [
+	'palette' => [
+		[ 'slug' => 'palette1', 'color' => '#FF5500' ],
+		[ 'slug' => 'palette2', 'color' => '#E04A00' ],
+		[ 'slug' => 'palette3', 'color' => '#0A0A0A' ],
+		[ 'slug' => 'palette4', 'color' => '#2D2D2D' ],
+		[ 'slug' => 'palette5', 'color' => '#6B6B6B' ],
+		[ 'slug' => 'palette6', 'color' => '#E0E0E0' ],
+		[ 'slug' => 'palette7', 'color' => '#F5F5F5' ],
+		[ 'slug' => 'palette8', 'color' => '#FAFAFA' ],
+		[ 'slug' => 'palette9', 'color' => '#FFFFFF' ],
+	]
+] );
 
 // ── FLUSH CACHE ───────────────────────────────────────────────────────────────
 if ( function_exists( 'wp_cache_flush' ) ) wp_cache_flush();
