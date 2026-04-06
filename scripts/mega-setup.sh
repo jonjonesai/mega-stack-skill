@@ -87,21 +87,10 @@ log "STEP 2: Installing Plugins"
 log "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
 PLUGINS=(
-  # ── CORE STACK ─────────────────────────────────────────────────────
-  "kadence-blocks"               # Kadence Blocks — REQUIRED for homepage
-  "woocommerce"                  # WooCommerce — REQUIRED for shop
-  "litespeed-cache"              # LiteSpeed Cache — REQUIRED on Hostinger
-
-  # ── SEO ─────────────────────────────────────────────────────────────
-  "seo-by-rank-math"             # Rank Math SEO — best free SEO plugin
-
-  # ── WOOCOMMERCE ENHANCEMENTS ────────────────────────────────────────
-  "woo-variation-swatches"       # Color/size swatches on product pages
-  "customer-reviews-woocommerce" # Product reviews (free)
-  "ti-woocommerce-wishlist"      # Wishlist button on products
-
-  # ── PERFORMANCE ─────────────────────────────────────────────────────
-  "wp-smushit"                   # Image compression (free Smush)
+  "kadence-blocks"   # Kadence Blocks — REQUIRED for homepage blocks
+  "woocommerce"      # WooCommerce — REQUIRED for shop
+  "litespeed-cache"  # LiteSpeed Cache — REQUIRED on Hostinger
+  "seo-by-rank-math" # Rank Math SEO
 )
 
 for plugin in "${PLUGINS[@]}"; do
