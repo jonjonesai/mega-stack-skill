@@ -87,11 +87,21 @@ log "STEP 2: Installing Plugins"
 log "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
 PLUGINS=(
-  "kadence-blocks"              # Kadence Blocks (Gutenberg blocks)
-  "woocommerce"                 # WooCommerce
-  "litespeed-cache"             # LiteSpeed Cache (Hostinger CDN)
-  "woo-variation-swatches"      # Product variation swatches
-  "customer-reviews-woocommerce" # Reviews (free alternative to paid)
+  # ── CORE STACK ─────────────────────────────────────────────────────
+  "kadence-blocks"               # Kadence Blocks — REQUIRED for homepage
+  "woocommerce"                  # WooCommerce — REQUIRED for shop
+  "litespeed-cache"              # LiteSpeed Cache — REQUIRED on Hostinger
+
+  # ── SEO ─────────────────────────────────────────────────────────────
+  "seo-by-rank-math"             # Rank Math SEO — best free SEO plugin
+
+  # ── WOOCOMMERCE ENHANCEMENTS ────────────────────────────────────────
+  "woo-variation-swatches"       # Color/size swatches on product pages
+  "customer-reviews-woocommerce" # Product reviews (free)
+  "ti-woocommerce-wishlist"      # Wishlist button on products
+
+  # ── PERFORMANCE ─────────────────────────────────────────────────────
+  "wp-smushit"                   # Image compression (free Smush)
 )
 
 for plugin in "${PLUGINS[@]}"; do
@@ -140,21 +150,43 @@ log "━━━━━━━━━━━━━━━━━━━━━━━━━
 $WP wc tool run install_pages --user=1 2>/dev/null || true
 ok "WooCommerce pages created"
 
-# Sensible WC defaults for POD stores
+# WooCommerce sensible defaults for POD stores
 $WP option update woocommerce_enable_reviews 'yes'
 $WP option update woocommerce_enable_review_rating 'yes'
 $WP option update woocommerce_review_rating_required 'no'
 $WP option update woocommerce_enable_coupons 'yes'
-$WP option update woocommerce_calc_taxes 'no'        # Enable manually when needed
+$WP option update woocommerce_calc_taxes 'no'
 $WP option update woocommerce_currency 'USD'
 $WP option update woocommerce_price_num_decimals '2'
 $WP option update woocommerce_weight_unit 'oz'
 $WP option update woocommerce_dimension_unit 'in'
-
-# Product defaults for POD (virtual, no shipping needed)
 $WP option update woocommerce_product_type 'simple'
-
+# POD products are fulfilled externally — disable stock management by default
+$WP option update woocommerce_manage_stock 'no'
+# Show prices inc tax on front end
+$WP option update woocommerce_tax_display_shop 'incl'
+# Disable WC bloat on non-shop pages
+$WP option update woocommerce_cart_redirect_after_add 'no'
+$WP option update woocommerce_enable_ajax_add_to_cart 'yes'
 ok "WooCommerce defaults configured"
+
+echo ""
+log "────────────────────────────────────────"
+log "STEP 5b: Rank Math SEO Basic Config"
+log "────────────────────────────────────────"
+
+# Rank Math: skip wizard, enable WooCommerce module, set basics
+$WP option update rank_math_registration_skip 'yes' 2>/dev/null || true
+$WP eval '
+if(class_exists("RankMath")) {
+    update_option("rank_math_modules", array_merge(
+        (array)get_option("rank_math_modules",[]),
+        ["woocommerce","sitemap","seo-analysis"]
+    ));
+    echo "Rank Math modules enabled\n";
+}
+' 2>/dev/null || true
+ok "Rank Math configured"
 
 echo ""
 log "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
