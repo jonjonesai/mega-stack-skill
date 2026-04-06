@@ -349,6 +349,51 @@ MEGA Stack: $3/mo. Every month. Forever.
 
 ---
 
+## Student Intake — Ask These 6 Questions First
+
+Before building anything, ask these in order. Wait for each answer.
+
+```
+Q1: What's your store name?
+Q2: What's your niche? (be specific — "funny golden retriever shirts" not just "pets")
+Q3: Light or dark style?
+     DARK → bold/dramatic. Best for: streetwear, gaming, hunting, gym, coffee, edgy niches
+     LIGHT → clean/friendly. Best for: pets, baby, home décor, food, florals, inspirational
+Q4: Primary brand color? (hex, color name, or "I don't know")
+     → If unknown: use navy #1B4F8A (light mode) or orange #FF5500 (dark mode). Works for any niche.
+Q5: Do you have a logo? (upload PNG with transparent bg, or skip for text logo)
+Q6: Do you have a hero image? (upload, or skip for gradient placeholder)
+```
+
+Once you have answers → execute the full build. Do not ask permission between steps.
+
+---
+
+## Palette System — Light vs Dark Mode
+
+Run after `mega-setup.sh`. Set env vars then call `set-palette.php`:
+
+```bash
+# Dark mode, student knows their color
+ssh $SSH "MEGA_MODE=dark MEGA_PRIMARY='#C62828' MEGA_ACCENT='#8B0000' \
+  wp eval-file /tmp/set-palette.php --path=$WP_PATH"
+
+# Light mode, student doesn't know their color (uses navy default)
+ssh $SSH "MEGA_MODE=light \
+  wp eval-file /tmp/set-palette.php --path=$WP_PATH"
+
+# Always purge after
+ssh $SSH "wp litespeed-purge all --path=$WP_PATH"
+```
+
+### Color from a name/description
+If student says "forest green" or "rose gold" or "I want something that feels like autumn":
+- Pick an appropriate hex, explain your choice, apply it
+- Don't ask for approval — just do it and tell them what you picked
+- They can always say "make it darker" or "try something warmer" to iterate
+
+---
+
 ## First-Time Setup
 
 If starting from scratch, run the setup script:

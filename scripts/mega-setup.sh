@@ -107,7 +107,7 @@ done
 
 echo ""
 log "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-log "STEP 3: Installing MEGA Agent Bridge"
+log "STEP 3: Installing MEGA Agent Bridge + Styles"
 log "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
 MU_DIR="$WP_PATH/wp-content/mu-plugins"
@@ -121,6 +121,15 @@ ok "MEGA Bridge installed as mu-plugin"
 $WP option update mega_bridge_key "$MEGA_BRIDGE_KEY" 2>/dev/null || \
   $WP eval "update_option('mega_bridge_key', '$MEGA_BRIDGE_KEY');"
 ok "MEGA Bridge API key stored"
+
+# Install mega-styles.php mu-plugin (header branding, mobile trigger, fonts)
+MEGA_STYLES_URL="https://raw.githubusercontent.com/jonjonesai/mega-stack-skill/main/scripts/mega-styles.php"
+curl -s "$MEGA_STYLES_URL" -o "$MU_DIR/mega-styles.php"
+ok "MEGA Styles mu-plugin installed"
+
+# Upload set-palette.php to /tmp for use during setup
+curl -s "https://raw.githubusercontent.com/jonjonesai/mega-stack-skill/main/scripts/set-palette.php" -o /tmp/set-palette.php
+ok "Palette setter ready at /tmp/set-palette.php"
 
 echo ""
 log "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
